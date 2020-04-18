@@ -8,7 +8,7 @@
  INSERT INTO App (app_name, category_name, audience_name, price, reviews) VALUES ('Green Eggs and Ham - Dr. Seuss', 'BOOKS_AND_REFERENCE','Everyone',3.99, 745);
  INSERT INTO App (app_name, category_name, audience_name, price, reviews) VALUES ('Meme Generator PRO', 'ENTERTAINMENT','Mature 17+',2.99, 4042);
  INSERT INTO App (app_name, category_name, audience_name, price, reviews) VALUES ('Tynker for Schools', 'GAME_EDUCATIONAL','Everyone',4.99, 33);
-INSERT INTO App (app_name, category_name, audience_name, price, reviews) VALUES ('My CookBook Pro (Ad Free)', 'FOOD_AND_DRINK','Everyone',5.99, 2291);
+INSERT INTO App (app_name, category_name, audience_name, price, reviews) VALUES ('My Talking Pet Pro', 'ENTERTAINMENT','Everyone',9.99, 11043);
 
 
 INSERT INTO Category (category_name) VALUES ('FOOD_AND_DRINK');
