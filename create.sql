@@ -21,4 +21,5 @@ ALTER TABLE App
     ADD CONSTRAINT category_name_fk FOREIGN KEY(category_name) REFERENCES Category(category_name);
 ALTER TABLE App
     ADD CONSTRAINT audience_name_fk FOREIGN KEY(audience_name) REFERENCES Audience(audience_name);
+
     
