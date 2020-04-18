@@ -19,7 +19,7 @@ for row in cursor:
 
 
 
-print("\nВивести відстоткове відношення додатків по аудиторії людей.\n")
+print("\n2.Вивести відстоткове відношення додатків по аудиторії людей.\n")
 query2 = """
 SELECT audience_name , round((COUNT(app_name))/ (SELECT COUNT(*) FROM App)*100, 2)  persent                                                                                                             
 FROM App
@@ -32,7 +32,7 @@ for row in cursor:
 
 
 
-print("\nвивести динаміку залежності кількості оглядів додатків від їх ціни, які передбачені для всіх груп користувачів. \n")
+print("\n3.Вивести динаміку залежності кількості оглядів додатків від їх ціни, які передбачені для всіх груп користувачів. \n")
 query3 = """
 SELECT price, SUM(reviews) sum_reviews
 FROM App
