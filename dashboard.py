@@ -1,14 +1,14 @@
 import cx_Oracle
 import chart_studio
 import re
-chart_studio.tools.set_credentials_file(username='allamakarenko279', api_key='YC6buV20CtVckEut1a6u')
+chart_studio.tools.set_credentials_file(username='AllaM', api_key='yrwzbbwF8OiYatgy6ena')
 import plotly.graph_objects as go
 import chart_studio.plotly as py
 import chart_studio.dashboard_objs as dash
 
 def fileId_from_url(url):
     """Return fileId from a url."""
-    raw_fileId = re.findall("~[A-z.]+/[0-9]+", url)[0][1: ]
+    raw_fileId = re.findall("~[0-z.]+/[0-9]+", url)[0][1: ]
     return raw_fileId.replace('/', ':')
 
 username = 'bd'
@@ -48,7 +48,7 @@ query2 = """
 SELECT audience_name , round((COUNT(app_name))/ (SELECT COUNT(*) FROM App)*100, 2)  persent                                                                                                             
 FROM App
 GROUP BY audience_name
-ORDER BY persent DESC, audience_name;
+ORDER BY persent DESC, audience_name
 """
 cursor.execute(query2)
 for row in cursor.fetchall():
@@ -68,13 +68,13 @@ SELECT price, SUM(reviews) sum_reviews
 FROM App
 WHERE audience_name='Everyone'
 GROUP BY price
-ORDER BY price;
+ORDER BY price
 """
 cursor.execute(query3)
 
 for row in cursor.fetchall():
-    cases.append (row[0])
-    deaths.append(row[1])
+    reviews.append (row[0])
+    price.append(row[1])
 scatter = go.Scatter (x = reviews, y = price)
 scatter = py.plot([scatter],auto_open = True, file_name = "Plot3")
 
