@@ -110,7 +110,7 @@ my_dboard.insert(box_2, 'below', 1)
 my_dboard.insert(box_3, 'left', 2)
 
 
-py.dashboard_ops.upload(my_dboard, 'dba_alla_lab2')
+py.dashboard_ops.upload(my_dboard, 'db_alla_lab2')
 
 
 cursor.close()
